@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "fe840af5-9724-453e-8a01-154a1f85c11b": {
+      "ProjectGuid": "fe840af5-9724-453e-8a01-154a1f85c11b",
+      "DisplayName": "Websocket",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
