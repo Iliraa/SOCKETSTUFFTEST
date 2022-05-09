@@ -59,10 +59,9 @@ namespace Websocket
             socket.BeginReceive(state.buffer, 0, SocketState.BUFFER_SIZE, SocketFlags.None, ReceiveCallback, socket);
             Console.WriteLine("Client connected, waiting for request...");
             serverSocket.BeginAccept(AcceptCallback, null);
-            if(socket != null)
-            {
-                SendRequest(socket);
-            }
+
+            SendRequest(socket);
+
         }
 
         private static void ReceiveCallback(IAsyncResult AR)
@@ -108,14 +107,14 @@ namespace Websocket
         }
         private static void SendRequest(Socket client)
         {
-            while(client.Connected)
+            while (client.Connected)
             {
                 Console.Write("Send a request: ");
                 string request = Console.ReadLine();
                 SendString(request);
 
             }
-            
+
 
 
         }
